@@ -72,11 +72,12 @@ class AppTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+
       key: Key(initialValue ?? ""),
       readOnly: readOnly ?? false,
       textAlignVertical: textAlignVertical,
       onFieldSubmitted: onFilledSubmited,
-      cursorColor: AppColorManager.darkOrange,
+      cursorColor: AppColorManager.amber,
       validator: validator,
       controller: controller,
       focusNode: focusNode,
@@ -93,11 +94,14 @@ class AppTextFormField extends StatelessWidget {
       expands: expand ?? false,
       decoration: InputDecoration(
         filled: filled ?? true,
-        fillColor: fillColor ?? AppColorManager.white,
+        fillColor: fillColor ?? AppColorManager.greyShadowOpacity1,
         hintText: hintText,
         suffixIcon: suffixIcon,
         prefixIcon: prefixIcon,
-        hintStyle: hintStyle,
+        hintStyle: hintStyle??TextStyle(
+          color: AppColorManager.white,
+          fontSize: FontSizeManager.fs13
+        ),
         prefixIconColor: Colors.grey,
         suffixIconColor: Colors.grey,
         contentPadding: contentPadding ??
@@ -140,8 +144,8 @@ class AppTextFormField extends StatelessWidget {
             )),
       ),
       style: TextStyle(
-          color: textColor,
-          fontSize: FontSizeManager.fs16,
+          color: AppColorManager.white,
+          fontSize: FontSizeManager.fs13,
           fontFamily: FontFamilyManager.cairo),
     );
   }

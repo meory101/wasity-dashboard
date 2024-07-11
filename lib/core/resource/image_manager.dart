@@ -7,4 +7,7 @@ class AppImageManager {
   /// pass the splash id to change the image path
   static String splash({String? splashId}) =>
       '$_imageBasePath/splash${splashId != null ? "_$splashId" : ""}.png';
+
+
+  static String logo = '$_imageBasePath/logo.png';
 }

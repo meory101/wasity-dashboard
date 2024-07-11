@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
 abstract class AppColorManager {
+
+
+
+  static const Color amber =Color(0xffE9B915);
+  static const Color ink =Color(0xff122636);
   static const Color black = Color(0xff171717);
   static const Color grey = Color(0xff8e8e93);
   static const Color green = Color(0xff34c759);

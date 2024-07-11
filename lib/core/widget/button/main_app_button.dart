@@ -45,7 +45,7 @@ class MainAppButton extends StatelessWidget {
         decoration: BoxDecoration(
           border: outLinedBorde == true
               ? Border.all(
-            color: borderColor ?? AppColorManager.darkOrange,
+            color: borderColor ?? AppColorManager.amber,
           )
               : null,
           boxShadow: haveShadow == true
