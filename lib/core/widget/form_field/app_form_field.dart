@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 import '../../resource/color_manager.dart';
 import '../../resource/font_manager.dart';
 import '../../resource/size_manager.dart';
@@ -72,7 +71,6 @@ class AppTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-
       key: Key(initialValue ?? ""),
       readOnly: readOnly ?? false,
       textAlignVertical: textAlignVertical,
@@ -98,10 +96,9 @@ class AppTextFormField extends StatelessWidget {
         hintText: hintText,
         suffixIcon: suffixIcon,
         prefixIcon: prefixIcon,
-        hintStyle: hintStyle??TextStyle(
-          color: AppColorManager.white,
-          fontSize: FontSizeManager.fs13
-        ),
+        hintStyle: hintStyle ??
+            TextStyle(
+                color: AppColorManager.white, fontSize: FontSizeManager.fs12),
         prefixIconColor: Colors.grey,
         suffixIconColor: Colors.grey,
         contentPadding: contentPadding ??
@@ -137,11 +134,12 @@ class AppTextFormField extends StatelessWidget {
               color: AppColorManager.lightGreyOpacity6,
             )),
         border: OutlineInputBorder(
-            borderRadius: BorderRadius.all(Radius.circular(
-                borderRadius != null ? borderRadius! : AppRadiusManager.r10)),
-            borderSide: BorderSide(
-              color: Theme.of(context).primaryColor,
-            )),
+          borderRadius: BorderRadius.all(Radius.circular(
+              borderRadius != null ? borderRadius! : AppRadiusManager.r10)),
+          borderSide: BorderSide(
+            color: Theme.of(context).primaryColor,
+          ),
+        ),
       ),
       style: TextStyle(
           color: AppColorManager.white,

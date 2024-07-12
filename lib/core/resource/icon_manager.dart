@@ -45,6 +45,8 @@ abstract class AppIconManager{
 
   static String add = '$_iconBasePath/add.svg';
   static String minimize = '$_iconBasePath/minimize.svg';
+  static String user = '$_iconBasePath/user.svg';
+  static String key = '$_iconBasePath/key.svg';
 
 
 }
